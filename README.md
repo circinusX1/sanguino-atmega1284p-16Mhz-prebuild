@@ -12,13 +12,13 @@ http://domoticx.com/mechanica-hardware-sanguinololu-board/
 
 
 This worked for me with arduino 1.8.7 Latest Marlin cloned Jan-20 2019
-With coinfig from configs examples Prusa I3 / B configuration file.
+With Configuration.h from configs examples Prusa I3/B configuration file.
 
-Though the sensors and steps were not yet configured.
 The bootloader and fuses were flashed with:
+https://www.banggood.com/3_3V-5V-USBASP-USBISP-AVR-Programmer-Downloader-ATMEGA8-ATMEGA128-With-Download-Cable-p-1179967.html?gmcCountry=CA&currency=CAD&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=frank&utm_campaign=pla-mix-ca-pc-0630&gclid=CjwKCAiA1ZDiBRAXEiwAIWyNC2ujsgPOv0pO7COmYchHGDPbf2uKtTT2KVa80gQ8ALqnNsOx7ZLl5BoCQIMQAvD_BwE&cur_warehouse=CN
 
-I bootloader-it with usbasp i2c programmer hooked on the small 9 pin's LCD pins.
-I use a standard LCD text based the I8 dyo is shipped with.
+Hooked on the small 9 pin's LCD pins. 
+
 
 Flashed the bootloader
 
@@ -26,8 +26,9 @@ Flashed the bootloader
     avrdude -p atmega1284p -c usbtiny -b 19200 -V -e -U lfuse:w:0xD6:m -U hfuse:w:0xDA:m -U efuse:w:0xFD:m -U flash:w:ATmegaBOOT_168_atmega1284p.hex:i
 
 
-On arduino Ide I added the json boards definition from: https://github.com/Lauszus/Sanguino
-I selected Board Sanguino, Prosessor 1284P 16 Mhz
+ - Be sure the JUMPER nerby pin 8 of the MPU is installed on the Sangushit board.
+ - On arduino Ide I added the json boards definition from: https://github.com/Lauszus/Sanguino
+ - I selected Board Sanguino, Prosessor 1284P 16 Mhz
 
 The boards.txt  (see where arduino puts this frm your installation. Mine keeps going in ~/.arduino15)
     <home/user>/.arduino15/packages/Sanguino/hardware/avr/1.0.2/boards.txt
