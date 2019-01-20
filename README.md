@@ -1,8 +1,9 @@
-=== Prusa  A/B (metal/aluminium) ===
+===Prusa  A/B (metal/aluminium)===
 
-== prebuild folder has prebuild images ==
+==prebuild folder has prebuild images==
 
-This worked for thhis board.
+I am not maintaing this repo. I just put here what worked for me.
+This worked for this board.
 
 
 https://www.geeetech.com/geeetech-prusa-i3-aluminum-diy-3d-printer-only-accept-order-fr-p-944.html
