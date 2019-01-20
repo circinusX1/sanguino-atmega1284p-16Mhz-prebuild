@@ -1,4 +1,13 @@
-Prusa I8 A/B (metal/aluminium) 
+=== Prusa  A/B (metal/aluminium) ===
+
+== prebuild folder has prebuild images ==
+
+This worked for thhis board.
+
+
+https://www.geeetech.com/geeetech-prusa-i3-aluminum-diy-3d-printer-only-accept-order-fr-p-944.html
+http://domoticx.com/mechanica-hardware-sanguinololu-board/
+
 This worked for me with arduino 1.8.7 Latest Marlin cloned Jan-20 2019
 With coinfig from configs examples Prusa I3 / B configuration file.
 
@@ -17,9 +26,14 @@ Flashed the bootloader
 On arduino Ide I added the json boards definition from: https://github.com/Lauszus/Sanguino
 I selected Board Sanguino, Prosessor 1284P 16 Mhz
 
-The borads.txt  (see where arduino puts this frm your installation. Mine keeps going in ~/.arduino15)
+The boards.txt  (see where arduino puts this frm your installation. Mine keeps going in ~/.arduino15)
     <home/user>/.arduino15/packages/Sanguino/hardware/avr/1.0.2/boards.txt
 has following content
+
+Then 
+ - the programmer I used is either USBTinyISP or AVRISP mkII
+ - the board is sanguino
+ - the processor is atmega 1284 p (16 Mhz)
 
 ```
 menu.cpu=Processor
