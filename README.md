@@ -1,13 +1,15 @@
-===Prusa  A/B (metal/aluminium)===
+==== Prusa  geeetech: A/B (metal/aluminium) ====
 
-==prebuild folder has prebuild images==
+ == Prebuild folder has prebuild images==
 
 I am not maintaing this repo. I just put here what worked for me.
 This worked for this board.
 
 
 https://www.geeetech.com/geeetech-prusa-i3-aluminum-diy-3d-printer-only-accept-order-fr-p-944.html
+
 http://domoticx.com/mechanica-hardware-sanguinololu-board/
+
 
 This worked for me with arduino 1.8.7 Latest Marlin cloned Jan-20 2019
 With coinfig from configs examples Prusa I3 / B configuration file.
